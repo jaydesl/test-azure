@@ -20,6 +20,8 @@ MODEL, SCALER = BUNDLE["model"], BUNDLE["scaler"]
 def make_prediction(**kwargs: float) -> float:
     """Make a churn prediction given the input features.
 
+    Pass each feature in FEATURE_ORDER as a keyword argument, for example
+    make_prediction(tenure=12, MonthlyCharges=70.5, TechSupport_yes=0).
     Adjust FEATURE_ORDER above according to the model definition.
     """
     # Extract features in the correct order
