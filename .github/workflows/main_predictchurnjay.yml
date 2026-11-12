@@ -71,5 +71,6 @@ jobs:
         with:
           app-name: 'predictchurnjay'
           slot-name: 'Production'
+          sku: 'flexconsumption'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E744EED4E966456AA5F47E82EC95EE15 }}
